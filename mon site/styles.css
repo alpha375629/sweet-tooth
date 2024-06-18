@@ -1,0 +1,158 @@
+/* Réinitialisation des styles et police de base */
+body {
+    font-family: 'Lilita One', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(forest-868715.jpg);
+    background-size: 100%;
+}
+body {
+    font-size: 22px; /* Remplacez 16px par la taille de police souhaitée */
+}
+/* Conteneur principal */
+.container {
+    max-inline-size: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styles pour le header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 15;
+    font-size: 2em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-inline-start: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul li.active a {
+    background-color: #555;
+}
+
+/* Styles pour le main */
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #d4f3da6a; /* Fond blanc */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    border-block-end: 2px solid #333;
+    padding-block-end: 0.5em;
+    margin-block-end: 1em;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Styles pour les formulaires */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-block-start: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-block-start: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-block-start: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff6347;
+}
+
+/* Styles pour le footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2px 0;
+    position: fixed;
+    inset-block-end: 0;
+    inline-size: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat; /* Empêche la répétition de l'arrière-plan */
+    background-size: cover; /* Ajuste la taille de l'arrière-plan pour couvrir tout le footer */
+}
+
+/* Styles pour les personnages */
+#characters {
+    text-align: center;
+}
+
+.character {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+
+.character img {
+    inline-size: 290px; /* Taille ajustée de l'image */
+    block-size: 295px; /* Taille ajustée de l'image */
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.character p {
+    margin: 0;
+    font-weight: bold;
+}
+#text-container {
+    block-size: 200px; /* Hauteur de l'élément */
+    overflow-y: auto; /* Ajouter une barre de défilement verticale si nécessaire */
+}
