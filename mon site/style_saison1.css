@@ -3,14 +3,14 @@ body {
     font-family: 'Lilita One', sans-serif;
     margin: 0;
     padding: 0;
-    background: url(forest-868715.jpg);
-    background-size: 100%;
+    background: url('forest-868715.jpg') no-repeat center center fixed;
+    background-size: cover;
     font-size: 22px;
 }
 
 /* Conteneur principal */
 .container {
-    max-inline-size: 800px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -24,7 +24,7 @@ header {
 }
 
 header h1 {
-    margin: 15;
+    margin: 0;
     font-size: 2em;
     text-align: center;
 }
@@ -38,7 +38,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin-inline-start: 20px;
+    margin-left: 20px;
 }
 
 nav ul li a {
@@ -66,15 +66,15 @@ main {
 section {
     margin: 20px 0;
     padding: 20px;
-    background-color: #d4f3da6a; /* Fond blanc */
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
 h2 {
-    border-block-end: 2px solid #333;
-    padding-block-end: 0.5em;
-    margin-block-end: 1em;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
     text-align: center;
 }
 
@@ -89,19 +89,19 @@ form {
 }
 
 form label {
-    margin-block-start: 10px;
+    margin-top: 10px;
     font-weight: bold;
 }
 
 form input, form textarea {
     padding: 10px;
-    margin-block-start: 5px;
+    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 form button {
-    margin-block-start: 10px;
+    margin-top: 10px;
     padding: 10px;
     background-color: #333;
     color: white;
@@ -119,39 +119,25 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 2px 0;
+    padding: 20px 0;
     position: fixed;
-    inset-block-end: 0;
-    inline-size: 100%;
+    bottom: 0;
+    width: 100%;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    background-repeat: no-repeat; /* Empêche la répétition de l'arrière-plan */
-    background-size: cover; /* Ajuste la taille de l'arrière-plan pour couvrir tout le footer */
 }
 
-/* Styles pour les personnages */
-#characters {
-    text-align: center;
-}
-
-.character {
-    display: inline-block;
-    text-align: center;
-    margin: 20px;
-}
-
-.character img {
-    inline-size: 290px; /* Taille ajustée de l'image */
-    block-size: 295px; /* Taille ajustée de l'image */
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 10px;
-}
-
-.character p {
-    margin: 0;
-    font-weight: bold;
-}
 #text-container {
-    block-size: 200px; /* Hauteur de l'élément */
+    height: 200px; /* Hauteur de l'élément */
     overflow-y: auto; /* Ajouter une barre de défilement verticale si nécessaire */
+}
+
+/* Styles spécifiques pour la page3 */
+.page3 #season1-content {
+    font-size: 30px; /* Changer la taille selon vos préférences */
+    max-height: 950px; /* Hauteur maximale de l'élément */
+    overflow-y: auto; /* Ajouter une barre de défilement verticale si nécessaire */
+    padding: 10px; /* Ajouter un padding pour un meilleur rendu */
+    border: 1px solid #ccc; /* Optionnel : ajouter une bordure pour délimiter la section */
+    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+    border-radius: 10px; /* Bordures arrondies */
 }
