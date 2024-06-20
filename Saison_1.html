@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saison 1</title>
+    <link rel="stylesheet" href="style_saison1.css">
+    <style>
+        /* CSS pour augmenter la taille de la police */
+        #season1-content {
+            font-size: 30px; /* Changer la taille selon vos préférences */
+            max-height: 950px; /* Hauteur maximale de l'élément */
+            overflow-y: auto; /* Ajouter une barre de défilement verticale si nécessaire */
+            padding: 10px; /* Ajouter un padding pour un meilleur rendu */
+            border: 1px solid #ccc; /* Optionnel : ajouter une bordure pour délimiter la section */
+            background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+            border-radius: 10px; /* Bordures arrondies */
+        }
+
+        /* CSS pour changer la police d'écriture */
+        body.page3 {
+            font-family: 'Lilita One', sans-serif;
+        }
+    </style>
+    <!-- Lien vers la police Lilita One -->
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body class="page3">
+    <header>
+        <h1>Sweet Tooth</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="page2.html">Personnages</a></li>
+                <li><a href="Saison_1.html">Saison 1</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="season1-content">
+            <h2>Contenu de la troisième page</h2>
+            <!-- Le contenu du fichier texte sera chargé ici avec une barre de défilement -->
+        </section>
+    </main>
+    
+    <footer class="page3-footer">
+        <p>&copy; 2024 Mon Site Web. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Fonction pour charger le contenu d'un fichier texte dans un élément spécifié
+        function chargerFichierTexte(url, elementId) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('Erreur:', error);
+                });
+        }
+
+        // Charger les fichiers texte lors du chargement de la page
+        window.onload = function () {
+            chargerFichierTexte('exemple.txt', 'season1-content');
+        };
+    </script>
+</body>
+</html>
